@@ -1,0 +1,15 @@
+.kgSpan {
+  font-weight: 500;
+  color: chocolate;
+}
+.kgItem {
+  background-color: khaki;
+}
+.button {
+  background-color: red;
+  float: right;
+}
+
+.active {
+  background-color: #d4edda; /* or any color you like */
+}

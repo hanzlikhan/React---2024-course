@@ -4,6 +4,7 @@ import TodoItems from './components/TodoItems';
 import AddTodo from './components/AddTodo';
 import WelcomeMsg from './components/WelcomeMsg'; // Import WelcomeMsg component
 import './App.css';
+import { TodoItemsContext } from './store/todo-items-store';
 
 function App() {
   const [todoItems, setTodoItems] = useState([]);
@@ -15,12 +16,16 @@ function App() {
   };
 
   return (
-    <center className="todo-container">
-      <AppName />
-      <AddTodo onNewItem={handleNewItem} />
-      {todoItems.length === 0 && <WelcomeMsg />} {/* Display welcome message when the list is empty */}
-      <TodoItems todoItems={todoItems} setTodoItems={setTodoItems} /> {/* Pass correct props */}
-    </center>
+    <TodoItemsContext.Provider>
+      <center className="todo-container">
+        <AppName />
+        <AddTodo onNewItem={handleNewItem} />
+        {todoItems.length === 0 && <WelcomeMsg />}{" "}
+        {/* Display welcome message when the list is empty */}
+        <TodoItems todoItems={todoItems} setTodoItems={setTodoItems} />{" "}
+        {/* Pass correct props */}
+      </center>
+    </TodoItemsContext.Provider>
   );
 }
 

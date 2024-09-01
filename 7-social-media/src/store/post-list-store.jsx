@@ -24,6 +24,7 @@ const PostListProvider = ({ children }) => {
     DEFAULT_POST_LIST
   );
 
+
   const addPost = (userId, postTitle, postBody, reactions, tags) => {
     dispatchPostList({
       type: "ADD_POST",

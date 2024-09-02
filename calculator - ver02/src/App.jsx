@@ -13,10 +13,10 @@ function App() {
     }else if(buttonText == "="){
         const result = eval(calVal)
         setCalValue(result)
-    }else{
-      const newDisplayValue = calVal + buttonText
-      setCalValue(newDisplayValue)
-    }
+    // }else{
+    //   const newDisplayValue = calVal + buttonText
+    //   setCalValue(newDisplayValue)
+    // }
     // const value = event.target.textContent; // Get the text of the clicked button
     console.log(buttonText); // Log the value to the console
     // Update the calculator display or perform further actions with the value here

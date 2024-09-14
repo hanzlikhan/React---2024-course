@@ -14,8 +14,8 @@ function App() {
         const result = eval(calVal)
         setCalValue(result)
     }else{
-      // const newDisplayValue = calVal + buttonText
-      // setCalValue(newDisplayValue)
+      const newDisplayValue = calVal + buttonText
+      setCalValue(newDisplayValue)
     }
     // const value = event.target.textContent; // Get the text of the clicked button
     console.log(buttonText); // Log the value to the console

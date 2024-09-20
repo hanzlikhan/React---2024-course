@@ -17,10 +17,10 @@ const postListReducer = (currPostList, action) => {
   return newPostList;
 };
 const PostListProvider = ({children}) => {
-  const [postList , dispatchPostList] = useReducer(
-    postListReducer,
-    DEFAULT_POST_LIST 
-  );
+  const [postList , dispatchPostList] = useReducer(  
+    postListReducer,      
+    DEFAULT_POST_LIST    
+  ); 
   const addPost = (userId, postTitle, postBody, reactions, tags) => {
     dispatchPostList({
       type: "ADD_POST",
@@ -34,6 +34,19 @@ const PostListProvider = ({children}) => {
       },
     });
   };
+
+  const addPost = (userId, postTitle , postBody, reactions , tags)=>{
+    dispatchPostList({
+      type: "ADD_POST",
+      payload:{
+        id: Date.now(),
+        title: postTitle,
+        body: postBody,
+        reactions: reactions,
+        tags: tags,
+      },
+    })
+  }
 
   const deletePost = (postId) => {
     dispatchPostList({

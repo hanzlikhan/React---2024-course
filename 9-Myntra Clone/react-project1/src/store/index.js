@@ -5,7 +5,7 @@ import fetchStatusSlice from "./fetchStatus";
 const hanzalStore = configureStore({
   reducer: { 
     items: itemsReducer, 
-    fetchStatus : fetchStatusSlice.reducer; // Correctly referencing the reducer
+    fetchStatus : fetchStatusSlice.reducer // Correctly referencing the reducer
   },
 });
 

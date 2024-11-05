@@ -54,10 +54,10 @@ header {
     display: flex;
     align-items: center;
 }
-.search_icon {
+/* .search_icon {
     box-sizing: content-box;
     height: 20px;
-    padding: 10px;
+    padding: 10px; */
 
     background-color: #f5f5f6;
     color: #282c3f;

@@ -55,14 +55,14 @@ header {
     align-items: center;
 }
 .search_icon {
-    box-sizing: content-box;
+    /* box-sizing: content-box;
     height: 20px; 
     padding: 10px; 
 
     background-color: #f5f5f6;
     color: #282c3f;
     font-weight: 300;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px; */
 }
 .search_input {
     color: #696e79;

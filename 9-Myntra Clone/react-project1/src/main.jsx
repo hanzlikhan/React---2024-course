@@ -25,10 +25,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Provider store={hanzalStore}>
-      <RouterProvider router={router} />
-    </Provider>
-  </StrictMode>
-);
+// createRoot(document.getElementById("root")).render(
+//   <StrictMode>
+//     <Provider store={hanzalStore}>
+//       <RouterProvider router={router} />
+//     </Provider>
+//   </StrictMode>
+// );

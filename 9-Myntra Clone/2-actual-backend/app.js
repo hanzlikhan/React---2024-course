@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const { getStoredItems, storeItems } = require('./data/items');
 
 const app = express();
-
+// using backend code 
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {

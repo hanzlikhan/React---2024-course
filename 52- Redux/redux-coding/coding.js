@@ -1,6 +1,6 @@
 const redux = require('redux');
 
-// Initial state
+// Initial state hook
 const INITIAL = {
    counter: 0
 };
